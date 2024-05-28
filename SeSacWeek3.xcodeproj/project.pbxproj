@@ -20,6 +20,9 @@
 		7B5C12842C0563BE0096DE9E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C12832C0563BE0096DE9E /* SearchViewController.swift */; };
 		7B5C12862C0563C70096DE9E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C12852C0563C70096DE9E /* SettingViewController.swift */; };
 		7B5C12882C0564200096DE9E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C12872C0564200096DE9E /* .gitignore */; };
+		7B5C128B2C0565A90096DE9E /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C128A2C0565A90096DE9E /* UIViewController+.swift */; };
+		7B5C128F2C0579DF0096DE9E /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C128E2C0579DF0096DE9E /* SampleTableViewCell.xib */; };
+		7B5C12902C0579DF0096DE9E /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C128D2C0579DF0096DE9E /* SampleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		7B5C12832C0563BE0096DE9E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		7B5C12852C0563C70096DE9E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		7B5C12872C0564200096DE9E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7B5C128A2C0565A90096DE9E /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		7B5C128D2C0579DF0096DE9E /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
+		7B5C128E2C0579DF0096DE9E /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +77,11 @@
 		7B5C12632C055EC40096DE9E /* SeSacWeek3 */ = {
 			isa = PBXGroup;
 			children = (
+				7B5C128C2C05799C0096DE9E /* Cell */,
 				7B5C127E2C05633E0096DE9E /* Home */,
 				7B5C127F2C0563620096DE9E /* Search */,
 				7B5C12802C05636A0096DE9E /* Setting */,
+				7B5C12892C0565830096DE9E /* Extension */,
 				7B5C12642C055EC40096DE9E /* AppDelegate.swift */,
 				7B5C12662C055EC40096DE9E /* SceneDelegate.swift */,
 				7B5C12682C055EC40096DE9E /* ViewController.swift */,
@@ -110,6 +118,23 @@
 				7B5C12852C0563C70096DE9E /* SettingViewController.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		7B5C12892C0565830096DE9E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C128A2C0565A90096DE9E /* UIViewController+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7B5C128C2C05799C0096DE9E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C128D2C0579DF0096DE9E /* SampleTableViewCell.swift */,
+				7B5C128E2C0579DF0096DE9E /* SampleTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +200,7 @@
 				7B5C12712C055EC50096DE9E /* Base in Resources */,
 				7B5C126C2C055EC40096DE9E /* Base in Resources */,
 				7B5C12792C05602F0096DE9E /* Home.storyboard in Resources */,
+				7B5C128F2C0579DF0096DE9E /* SampleTableViewCell.xib in Resources */,
 				7B5C127B2C0560360096DE9E /* Search.storyboard in Resources */,
 				7B5C127D2C0560430096DE9E /* Setting.storyboard in Resources */,
 			);
@@ -188,9 +214,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5C12842C0563BE0096DE9E /* SearchViewController.swift in Sources */,
+				7B5C12902C0579DF0096DE9E /* SampleTableViewCell.swift in Sources */,
 				7B5C12692C055EC40096DE9E /* ViewController.swift in Sources */,
 				7B5C12652C055EC40096DE9E /* AppDelegate.swift in Sources */,
 				7B5C12672C055EC40096DE9E /* SceneDelegate.swift in Sources */,
+				7B5C128B2C0565A90096DE9E /* UIViewController+.swift in Sources */,
 				7B5C12822C0563AC0096DE9E /* HomeViewController.swift in Sources */,
 				7B5C12862C0563C70096DE9E /* SettingViewController.swift in Sources */,
 			);
