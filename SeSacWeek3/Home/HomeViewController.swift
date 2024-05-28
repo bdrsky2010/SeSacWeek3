@@ -25,6 +25,8 @@ class HomeViewController: UIViewController,
         firstFilterButton, secondFilterButton, thirdFilterButton
     ]
     
+    let list = TravelInfo.travel
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +35,8 @@ class HomeViewController: UIViewController,
     }
     
     private func configureTableView() {
+        tableView.rowHeight = UITableView.automaticDimension // 동적 cell height
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -41,12 +45,18 @@ class HomeViewController: UIViewController,
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = SampleTableViewCell.identifier
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! SampleTableViewCell
+        
+        let index = indexPath.row
+        let data = list[index]
+        
+        cell.configureCell(data)
+        
         return cell
     }
 }
