@@ -25,6 +25,8 @@
 		7B5C12902C0579DF0096DE9E /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C128D2C0579DF0096DE9E /* SampleTableViewCell.swift */; };
 		7B5C12932C05A18F0096DE9E /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C12922C05A18F0096DE9E /* TravelModel.swift */; };
 		7B5C12962C05A6650096DE9E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7B5C12952C05A6650096DE9E /* Kingfisher */; };
+		7B5C129A2C06B2370096DE9E /* BrownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C12992C06B2370096DE9E /* BrownViewController.swift */; };
+		7B5C129E2C06CF0F0096DE9E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C129D2C06CF0F0096DE9E /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		7B5C128D2C0579DF0096DE9E /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
 		7B5C128E2C0579DF0096DE9E /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
 		7B5C12922C05A18F0096DE9E /* TravelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		7B5C12992C06B2370096DE9E /* BrownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownViewController.swift; sourceTree = "<group>"; };
+		7B5C129D2C06CF0F0096DE9E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				7B5C12812C0563AC0096DE9E /* HomeViewController.swift */,
+				7B5C129D2C06CF0F0096DE9E /* DetailViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				7B5C12852C0563C70096DE9E /* SettingViewController.swift */,
+				7B5C12992C06B2370096DE9E /* BrownViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -233,7 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5C12842C0563BE0096DE9E /* SearchViewController.swift in Sources */,
+				7B5C129A2C06B2370096DE9E /* BrownViewController.swift in Sources */,
 				7B5C12902C0579DF0096DE9E /* SampleTableViewCell.swift in Sources */,
+				7B5C129E2C06CF0F0096DE9E /* DetailViewController.swift in Sources */,
 				7B5C12692C055EC40096DE9E /* ViewController.swift in Sources */,
 				7B5C12932C05A18F0096DE9E /* TravelModel.swift in Sources */,
 				7B5C12652C055EC40096DE9E /* AppDelegate.swift in Sources */,
