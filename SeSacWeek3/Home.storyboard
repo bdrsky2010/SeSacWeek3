@@ -90,9 +90,41 @@
                     <view key="view" contentMode="scaleToFill" id="1QP-km-0Ne">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qet-aE-lG2">
+                                <rect key="frame" x="20" y="79" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cb6-m6-vaS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8E-ub-PUA">
+                                <rect key="frame" x="20" y="149" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="asu-ux-9JY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3P2-Lq-RnW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3P2-Lq-RnW" firstAttribute="trailing" secondItem="qet-aE-lG2" secondAttribute="trailing" constant="20" id="0HV-RA-dxL"/>
+                            <constraint firstItem="qet-aE-lG2" firstAttribute="top" secondItem="3P2-Lq-RnW" secondAttribute="top" constant="20" id="AZf-Un-l9L"/>
+                            <constraint firstItem="3P2-Lq-RnW" firstAttribute="trailing" secondItem="y8E-ub-PUA" secondAttribute="trailing" constant="20" id="dji-v8-z7Y"/>
+                            <constraint firstItem="qet-aE-lG2" firstAttribute="leading" secondItem="3P2-Lq-RnW" secondAttribute="leading" constant="20" id="pUN-F7-OHt"/>
+                            <constraint firstItem="y8E-ub-PUA" firstAttribute="top" secondItem="qet-aE-lG2" secondAttribute="bottom" constant="20" id="yX7-km-9uz"/>
+                            <constraint firstItem="y8E-ub-PUA" firstAttribute="leading" secondItem="3P2-Lq-RnW" secondAttribute="leading" constant="20" id="zRr-yK-E7o"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="qet-aE-lG2" id="krl-FN-MG8"/>
+                        <outlet property="gradeLabel" destination="y8E-ub-PUA" id="sBr-Kj-AV7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ab-NY-nOt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

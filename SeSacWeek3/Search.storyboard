@@ -33,21 +33,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4za-nn-QvE">
-                                <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aDa-Bt-n5i">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hFS-mJ-eeQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Pl-H7-gPz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4za-nn-QvE" firstAttribute="top" secondItem="2Pl-H7-gPz" secondAttribute="top" constant="50" id="3Hs-xt-mer"/>
+                            <constraint firstItem="4za-nn-QvE" firstAttribute="top" secondItem="aDa-Bt-n5i" secondAttribute="top" id="3Hs-xt-mer"/>
                             <constraint firstItem="2Pl-H7-gPz" firstAttribute="bottom" secondItem="4za-nn-QvE" secondAttribute="bottom" id="Hi6-7a-cMi"/>
+                            <constraint firstItem="aDa-Bt-n5i" firstAttribute="top" secondItem="2Pl-H7-gPz" secondAttribute="top" id="I0a-bN-lii"/>
                             <constraint firstItem="2Pl-H7-gPz" firstAttribute="trailing" secondItem="4za-nn-QvE" secondAttribute="trailing" id="NBs-Qe-QeO"/>
                             <constraint firstItem="4za-nn-QvE" firstAttribute="leading" secondItem="2Pl-H7-gPz" secondAttribute="leading" id="TAv-RQ-ykb"/>
+                            <constraint firstItem="2Pl-H7-gPz" firstAttribute="trailing" secondItem="aDa-Bt-n5i" secondAttribute="trailing" id="hhl-fv-jR1"/>
+                            <constraint firstItem="aDa-Bt-n5i" firstAttribute="leading" secondItem="2Pl-H7-gPz" secondAttribute="leading" id="k2L-SW-4D2"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="4za-nn-QvE" id="KH2-Ar-hnx"/>
+                        <outlet property="textField" destination="aDa-Bt-n5i" id="cgN-kY-NX5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n06-Wq-M3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

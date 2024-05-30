@@ -20,6 +20,7 @@
                         <segue destination="jIR-b0-N38" kind="relationship" relationship="viewControllers" id="Y11-PD-dbs"/>
                         <segue destination="KTN-Ee-X0c" kind="relationship" relationship="viewControllers" id="YvL-HB-xmt"/>
                         <segue destination="mPB-bT-lS2" kind="relationship" relationship="viewControllers" id="Zb9-VK-yut"/>
+                        <segue destination="yHp-cx-13K" kind="relationship" relationship="viewControllers" id="wgJ-dP-RqH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSy-98-cdh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -75,6 +76,16 @@
             </objects>
             <point key="canvasLocation" x="1643" y="692"/>
         </scene>
+        <!--Translate-->
+        <scene sceneID="p50-zE-Zhp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Translate" id="gjb-qY-zjg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ztf-Wc-6OI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3JA-RH-bpB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621" y="1351"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Ug-4G-TOa">
             <objects>
@@ -112,6 +123,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mqa-k0-obN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="966" y="692"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lYs-tX-Byl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yHp-cx-13K" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="Wd1-ss-t8l"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QGV-qc-Fka">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gjb-qY-zjg" kind="relationship" relationship="rootViewController" id="grh-YJ-nVC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PS2-SV-aBO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="1351"/>
         </scene>
     </scenes>
 </document>

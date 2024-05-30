@@ -25,6 +25,7 @@ extension SearchViewController {
                                             style: .plain,
                                             target: self,
                                             action: #selector(leftBarButtonAction))
+        leftBarButton.tintColor = .systemBackground
         
         navigationItem.leftBarButtonItem = leftBarButton
     }

@@ -70,8 +70,9 @@ extension HomeViewController: UITableViewDelegate {
             
             let identifier = BrownViewController.identifier
             let vc = sb.instantiateViewController(withIdentifier: identifier) as! BrownViewController
+            let nav = UINavigationController(rootViewController: vc)
             
-            present(vc, animated: true)
+            present(nav, animated: true)
             
             return
         }
@@ -81,6 +82,15 @@ extension HomeViewController: UITableViewDelegate {
         
         let identifier = DetailViewController.identifier
         let vc = storyboard?.instantiateViewController(withIdentifier: identifier) as! DetailViewController
+        
+        // Pass Data 2. vc가 가지고 있는 프로퍼티에 데이터 추가/변경
+        vc.contents = data.title
+        vc.descriptionContents = data.description ?? ""
+        vc.gradeAndSave = data.titleDescription
+        vc.data = data
+        // 값 전달 시 Outlet 변수에 다이렉트로 접근을 할 수 없음
+        // 스토리보드의 컴포넌트와 연결되어 있는 Outlet 변수의 인스턴스는
+        // viewDidLoad() 호출될 때 메모리 위에 올라간다.
         
         navigationController?.pushViewController(vc, animated: true)
     }

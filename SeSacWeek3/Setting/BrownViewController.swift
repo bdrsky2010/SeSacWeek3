@@ -16,7 +16,6 @@ class BrownViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .systemBrown
         navigationItem.title = "브라운"
     }
     

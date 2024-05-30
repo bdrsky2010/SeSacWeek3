@@ -32,7 +32,7 @@ struct TravelInfo {
                save: 6932,
                like: false,
                ad: false),
-        Travel(title: "쿠알로아 랜치쿠알로아 랜치쿠알로아 랜치쿠알로아 랜치쿠알로아 랜치쿠알로아 랜치쿠알로아 랜치쿠알로아 랜치쿠알로아 랜치",
+        Travel(title: "쿠알로아 랜치",
                description: "광활한 대자연에서 즐기는 다양하고 재미있는 액티비티",
                travel_image: "https://images.unsplash.com/photo-1709380733305-e65f500ab1ac?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                grade: 4.9,
