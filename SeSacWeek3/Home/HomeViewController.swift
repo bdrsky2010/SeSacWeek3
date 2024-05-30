@@ -46,7 +46,7 @@ extension HomeViewController {
     }
 }
 
-// MARK: Set Up UITableViewDelgate
+// MARK: Configure UITableViewDelgate
 extension HomeViewController: UITableViewDelegate {
     // 셀을 클릭했는데 동작을 안한다면?
     // - print로 확인
@@ -86,7 +86,7 @@ extension HomeViewController: UITableViewDelegate {
     }
 }
 
-// MARK: Set Up UITableViewDataSource
+// MARK: Configure UITableViewDataSource
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count

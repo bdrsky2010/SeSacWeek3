@@ -27,6 +27,7 @@
 		7B5C12962C05A6650096DE9E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7B5C12952C05A6650096DE9E /* Kingfisher */; };
 		7B5C129A2C06B2370096DE9E /* BrownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C12992C06B2370096DE9E /* BrownViewController.swift */; };
 		7B5C129E2C06CF0F0096DE9E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C129D2C06CF0F0096DE9E /* DetailViewController.swift */; };
+		7B5C12BE2C0802CD0096DE9E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C12BD2C0802CD0096DE9E /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		7B5C12922C05A18F0096DE9E /* TravelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
 		7B5C12992C06B2370096DE9E /* BrownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownViewController.swift; sourceTree = "<group>"; };
 		7B5C129D2C06CF0F0096DE9E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7B5C12BD2C0802CD0096DE9E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				7B5C12832C0563BE0096DE9E /* SearchViewController.swift */,
+				7B5C12BD2C0802CD0096DE9E /* MapViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				7B5C12692C055EC40096DE9E /* ViewController.swift in Sources */,
 				7B5C12932C05A18F0096DE9E /* TravelModel.swift in Sources */,
 				7B5C12652C055EC40096DE9E /* AppDelegate.swift in Sources */,
+				7B5C12BE2C0802CD0096DE9E /* MapViewController.swift in Sources */,
 				7B5C12672C055EC40096DE9E /* SceneDelegate.swift in Sources */,
 				7B5C128B2C0565A90096DE9E /* UIViewController+.swift in Sources */,
 				7B5C12822C0563AC0096DE9E /* HomeViewController.swift in Sources */,
