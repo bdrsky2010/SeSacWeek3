@@ -8,9 +8,7 @@
 import UIKit
 import Kingfisher
 
-class SampleTableViewCell: UITableViewCell {
-
-    static let identifier = "SampleTableViewCell"
+final class SampleTableViewCell: UITableViewCell {
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var contentLabel: UILabel!

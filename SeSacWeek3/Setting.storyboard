@@ -64,24 +64,76 @@
                                     <action selector="pushShow:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nFh-Wq-qSH"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ek-zg-que">
+                                <rect key="frame" x="20" y="399" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2OU-Sj-sQ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uNc-6i-kFr">
+                                <rect key="frame" x="20" y="469" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KII-bB-NIf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chK-NF-0z4">
+                                <rect key="frame" x="20" y="539" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hqN-3W-oFg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qQ-So-F8Z">
+                                <rect key="frame" x="20" y="609" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ak1-jc-XxG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GHv-2k-mWh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0qQ-So-F8Z" secondAttribute="trailing" constant="20" id="6Jm-g8-FeI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="chK-NF-0z4" secondAttribute="trailing" constant="20" id="7vU-7J-bYB"/>
+                            <constraint firstItem="5Ek-zg-que" firstAttribute="top" secondItem="BhQ-PV-41q" secondAttribute="bottom" constant="20" id="B2a-39-6E8"/>
                             <constraint firstItem="FJB-qD-pku" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="C67-RC-3gR"/>
+                            <constraint firstItem="chK-NF-0z4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="EAe-xD-CY7"/>
+                            <constraint firstItem="uNc-6i-kFr" firstAttribute="top" secondItem="5Ek-zg-que" secondAttribute="bottom" constant="20" id="F1W-kc-2Xs"/>
                             <constraint firstItem="r36-k1-aSb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="IPO-7R-7Qr"/>
                             <constraint firstItem="peH-Rh-XT2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="IQn-AG-vle"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BhQ-PV-41q" secondAttribute="trailing" constant="30" id="Iab-V6-0Fx"/>
+                            <constraint firstItem="5Ek-zg-que" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="LNI-oU-BFH"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="peH-Rh-XT2" secondAttribute="trailing" constant="30" id="OhW-5Z-bjn"/>
+                            <constraint firstItem="0qQ-So-F8Z" firstAttribute="top" secondItem="chK-NF-0z4" secondAttribute="bottom" constant="20" id="PYW-0n-XT4"/>
+                            <constraint firstItem="uNc-6i-kFr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Qo8-n3-lJu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5Ek-zg-que" secondAttribute="trailing" constant="20" id="aId-sc-suX"/>
+                            <constraint firstItem="chK-NF-0z4" firstAttribute="top" secondItem="uNc-6i-kFr" secondAttribute="bottom" constant="20" id="c0S-BB-y2m"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="r36-k1-aSb" secondAttribute="trailing" constant="30" id="chh-Im-OhD"/>
                             <constraint firstItem="r36-k1-aSb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="dc2-tJ-ESl"/>
                             <constraint firstItem="BhQ-PV-41q" firstAttribute="top" secondItem="peH-Rh-XT2" secondAttribute="bottom" constant="30" id="eCP-ev-sWA"/>
                             <constraint firstItem="FJB-qD-pku" firstAttribute="top" secondItem="r36-k1-aSb" secondAttribute="bottom" constant="30" id="k17-Wp-gRO"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FJB-qD-pku" secondAttribute="trailing" constant="30" id="kFJ-dW-Nd4"/>
                             <constraint firstItem="peH-Rh-XT2" firstAttribute="top" secondItem="FJB-qD-pku" secondAttribute="bottom" constant="30" id="kMt-cU-I5x"/>
+                            <constraint firstItem="0qQ-So-F8Z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="w08-pu-fex"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uNc-6i-kFr" secondAttribute="trailing" constant="20" id="zXA-8g-zKa"/>
                             <constraint firstItem="BhQ-PV-41q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="zhU-e7-BzG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="locationTextField" destination="chK-NF-0z4" id="hhT-cb-Y2I"/>
+                        <outlet property="nicknameTextField" destination="5Ek-zg-que" id="R1m-eU-4xc"/>
+                        <outlet property="phoneTextField" destination="uNc-6i-kFr" id="DYu-7c-0AM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

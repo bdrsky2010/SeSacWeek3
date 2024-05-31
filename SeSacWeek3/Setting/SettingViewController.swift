@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SampleViewController: UIViewController {
+final class SampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -15,15 +15,33 @@ class SampleViewController: UIViewController {
     }
 }
 
-class SettingViewController: UIViewController {
+final class SettingViewController: UIViewController {
 
+    static let nicknameKey = "nickname"
+    static let phoneKey = "phone"
+    static let locationKey = "location"
+    
+    @IBOutlet weak var nicknameTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var locationTextField: UITextField!
+    
+    private let userDefaultsManager = UserDefaultsManager.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        nicknameTextField.text = userDefaultsManager.nickname
+        phoneTextField.text = userDefaultsManager.phone
+        locationTextField.text = userDefaultsManager.location
+        
         configureView("설정 화면")
     }
     
-
+    @IBAction func saveButtonClicked(_ sender: UIButton) {
+        userDefaultsManager.nickname = nicknameTextField.text ?? ""
+        userDefaultsManager.phone = phoneTextField.text ?? ""
+        userDefaultsManager.location = locationTextField.text ?? ""
+    }
     
     @IBAction func presentModal(_ sender: UIButton) {
         // 코드만 가지고 오는 형태

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TranslateViewController: UIViewController {
+final class TranslateViewController: UIViewController {
 
     @IBOutlet weak var originalTextView: UITextView!
     @IBOutlet weak var translateButton: UIButton!
@@ -20,6 +20,9 @@ class TranslateViewController: UIViewController {
 
         originalTextView.text = placeholder
         originalTextView.textColor = .systemGray
+        originalTextView.font = CustomFont.primary
+        
+        translateButton.setImage(CustomImage.star, for: .normal)
         
         // 둘 중 하나만 delegate로 기능 구현을 하고 싶다면
         // 1. 한 쪽에 대한 delegate 연결을 하지 않거나

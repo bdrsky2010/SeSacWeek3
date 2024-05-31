@@ -16,13 +16,39 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5OG-OB-MLu">
+                                <rect key="frame" x="0.0" y="59" width="120" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="mdg-XL-Mef"/>
+                                </constraints>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aZW-ec-m1Q">
+                                <rect key="frame" x="120" y="59" width="273" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="5OG-OB-MLu" secondAttribute="bottom" id="N1e-Pu-zhE"/>
+                            <constraint firstItem="5OG-OB-MLu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Yu5-3h-IhY"/>
+                            <constraint firstItem="aZW-ec-m1Q" firstAttribute="leading" secondItem="5OG-OB-MLu" secondAttribute="trailing" id="hRv-Ou-HPa"/>
+                            <constraint firstItem="aZW-ec-m1Q" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="mWS-dH-XXD"/>
+                            <constraint firstItem="5OG-OB-MLu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="n0l-7a-boP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aZW-ec-m1Q" secondAttribute="trailing" id="qv2-c9-GMJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="aZW-ec-m1Q" secondAttribute="bottom" id="yX7-KL-3LY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentsTableView" destination="aZW-ec-m1Q" id="aEJ-RQ-SuW"/>
+                        <outlet property="filterTableView" destination="5OG-OB-MLu" id="GP6-Q8-8kI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="-2"/>
+            <point key="canvasLocation" x="75.572519083969468" y="-2.1126760563380285"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="vCG-ZW-hRg">

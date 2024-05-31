@@ -7,11 +7,7 @@
 
 import UIKit
 
-class BrownViewController: UIViewController {
-
-    static let identifier = "BrownViewController"
-    
-    
+final class BrownViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

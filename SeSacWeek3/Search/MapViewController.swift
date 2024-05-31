@@ -9,9 +9,7 @@ import UIKit
 import MapKit
 
 // 변수의 생명주기(scope)
-class MapViewController: UIViewController {
-    
-    static let identifier = "MapViewController"
+final class MapViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var mapView: MKMapView!

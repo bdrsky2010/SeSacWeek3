@@ -7,9 +7,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
-
-    static let identifier = "DetailViewController"
+final class DetailViewController: UIViewController {
     
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var gradeLabel: UILabel!

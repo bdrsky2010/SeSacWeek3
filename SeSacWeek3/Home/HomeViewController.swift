@@ -11,7 +11,7 @@ import UIKit
  2. UITableViewDelegate, UITableViewDataSource
  3. 
  */
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
 
     @IBOutlet weak var usetTextField: UITextField!
     @IBOutlet weak var firstFilterButton: UIButton!

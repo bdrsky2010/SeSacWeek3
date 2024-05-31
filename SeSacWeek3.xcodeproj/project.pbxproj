@@ -30,6 +30,11 @@
 		7B5C12BE2C0802CD0096DE9E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C12BD2C0802CD0096DE9E /* MapViewController.swift */; };
 		7B5C12C02C080FC00096DE9E /* Translate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C12BF2C080FC00096DE9E /* Translate.storyboard */; };
 		7B5C12C32C0810020096DE9E /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C12C22C0810020096DE9E /* TranslateViewController.swift */; };
+		7B5C12C52C08579D0096DE9E /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C12C42C08579D0096DE9E /* Font+.swift */; };
+		7B5C12D72C0951FC0096DE9E /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C12D62C0951FC0096DE9E /* UserDefaultsManager.swift */; };
+		7B5C12DA2C0957C50096DE9E /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C12D82C0957C50096DE9E /* SearchTableViewCell.swift */; };
+		7B5C12DB2C0957C50096DE9E /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C12D92C0957C50096DE9E /* SearchTableViewCell.xib */; };
+		7B5C12DD2C0963C30096DE9E /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C12DC2C0963C30096DE9E /* ReuseIdentifierProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +62,11 @@
 		7B5C12BD2C0802CD0096DE9E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7B5C12BF2C080FC00096DE9E /* Translate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Translate.storyboard; sourceTree = "<group>"; };
 		7B5C12C22C0810020096DE9E /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		7B5C12C42C08579D0096DE9E /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		7B5C12D62C0951FC0096DE9E /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		7B5C12D82C0957C50096DE9E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		7B5C12D92C0957C50096DE9E /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		7B5C12DC2C0963C30096DE9E /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,9 @@
 				7B5C126D2C055EC50096DE9E /* Assets.xcassets */,
 				7B5C126F2C055EC50096DE9E /* LaunchScreen.storyboard */,
 				7B5C12722C055EC50096DE9E /* Info.plist */,
+				7B5C12C42C08579D0096DE9E /* Font+.swift */,
+				7B5C12D62C0951FC0096DE9E /* UserDefaultsManager.swift */,
+				7B5C12DC2C0963C30096DE9E /* ReuseIdentifierProtocol.swift */,
 			);
 			path = SeSacWeek3;
 			sourceTree = "<group>";
@@ -127,6 +140,8 @@
 			children = (
 				7B5C12832C0563BE0096DE9E /* SearchViewController.swift */,
 				7B5C12BD2C0802CD0096DE9E /* MapViewController.swift */,
+				7B5C12D82C0957C50096DE9E /* SearchTableViewCell.swift */,
+				7B5C12D92C0957C50096DE9E /* SearchTableViewCell.xib */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -246,6 +261,7 @@
 				7B5C128F2C0579DF0096DE9E /* SampleTableViewCell.xib in Resources */,
 				7B5C127B2C0560360096DE9E /* Search.storyboard in Resources */,
 				7B5C127D2C0560430096DE9E /* Setting.storyboard in Resources */,
+				7B5C12DB2C0957C50096DE9E /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5C12D72C0951FC0096DE9E /* UserDefaultsManager.swift in Sources */,
 				7B5C12842C0563BE0096DE9E /* SearchViewController.swift in Sources */,
 				7B5C129A2C06B2370096DE9E /* BrownViewController.swift in Sources */,
 				7B5C12902C0579DF0096DE9E /* SampleTableViewCell.swift in Sources */,
@@ -263,10 +280,13 @@
 				7B5C12692C055EC40096DE9E /* ViewController.swift in Sources */,
 				7B5C12932C05A18F0096DE9E /* TravelModel.swift in Sources */,
 				7B5C12652C055EC40096DE9E /* AppDelegate.swift in Sources */,
+				7B5C12DD2C0963C30096DE9E /* ReuseIdentifierProtocol.swift in Sources */,
 				7B5C12BE2C0802CD0096DE9E /* MapViewController.swift in Sources */,
+				7B5C12C52C08579D0096DE9E /* Font+.swift in Sources */,
 				7B5C12672C055EC40096DE9E /* SceneDelegate.swift in Sources */,
 				7B5C128B2C0565A90096DE9E /* UIViewController+.swift in Sources */,
 				7B5C12C32C0810020096DE9E /* TranslateViewController.swift in Sources */,
+				7B5C12DA2C0957C50096DE9E /* SearchTableViewCell.swift in Sources */,
 				7B5C12822C0563AC0096DE9E /* HomeViewController.swift in Sources */,
 				7B5C12862C0563C70096DE9E /* SettingViewController.swift in Sources */,
 			);
